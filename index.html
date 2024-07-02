@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb154f60a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Where in the World?</h1>
+            <div class="darkmodebuttondiv">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fa-regular fa-moon"></i>
+                    Dark Mode
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="controls">
+                <div class="search-container"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search" type="text" placeholder="Search for a country..." class="search-input">
+            </div>
+                <select id="region-filter" class="region-filter">
+                    <option value="">Filter by Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+            <div id="countries-container" class="countries-container">
+                <!-- Countries will be displayed here -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

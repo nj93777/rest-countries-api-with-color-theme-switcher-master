@@ -1,0 +1,269 @@
+body {
+  background: #f7fafc;
+  color: #1a202c;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.country-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.theme-toggle {
+  padding: 10px 20px;
+  background-color: #f7fafc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: #cbd5e0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input,
+.region-filter {
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.search-input {
+  padding-left: 35px;
+}
+
+.region-filter {
+  margin-left: 20px;
+}
+
+.countries-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.country-card {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.country-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.country-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.country-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #cbd5e0;
+}
+
+.country-detail {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.country-detail img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.country-detail h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.country-detail p strong {
+  color: #333; /* Vaaleampi musta */
+}
+
+.country-detail p {
+  color: #666; /* Vielä haaleampi väri */
+}
+
+.border-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.border-button:hover {
+  background-color: #cbd5e0;
+}
+
+/* Dark mode styles for elements */
+.dark-mode .theme-toggle {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.dark-mode .theme-toggle:hover {
+  background-color: #2d3748;
+}
+
+.dark-mode .search-input,
+.dark-mode .region-filter {
+  background-color: #2d3748;
+  color: #f7fafc;
+  border: 1px solid #4a5568;
+}
+
+.dark-mode .country-card {
+  background-color: #2d3748;
+  color: #f7fafc;
+}
+
+.dark-mode .back-button {
+  background-color: #4a5568;
+  color: #f7fafc;
+}
+
+.dark-mode .back-button:hover {
+  background-color: #2d3748;
+}
+
+.dark-mode .country-detail {
+  background-color: #1A202C;
+  color: #f7fafc;
+}
+
+.dark-mode .country-detail h2 {
+  color: #f7fafc;
+}
+
+.dark-mode .country-detail p strong {
+  color: #e2e8f0; /* Vaaleampi väri dark modessa */
+}
+
+.dark-mode .country-detail p {
+  color: #a0aec0; /* Vielä haaleampi väri dark modessa */
+}
+
+.dark-mode .border-button {
+  background-color: #2d3748;
+  color: #f7fafc;
+}
+
+.dark-mode .border-button:hover {
+  background-color: #1a202c;
+}
+
+#darkmodebutton {
+  width: 20px;
+}
+
+.dark-mode {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.dark-mode .header {
+  background-color: #2d3748;
+}
+
+/* Media query for screens less than 468px */
+@media (max-width: 468px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .region-filter {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .countries-container {
+    grid-template-columns: 1fr;
+  }
+
+  .search-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .country-detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .country-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
