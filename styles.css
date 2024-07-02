@@ -140,11 +140,11 @@ body {
 }
 
 .country-detail p strong {
-  color: #333; /* Vaaleampi musta */
+  color: #333; 
 }
 
 .country-detail p {
-  color: #666; /* Vielä haaleampi väri */
+  color: #666; 
 }
 
 .border-button {
@@ -161,6 +161,7 @@ body {
 }
 
 /* Dark mode styles for elements */
+
 .dark-mode .theme-toggle {
   background-color: #1a202c;
   color: #f7fafc;
@@ -201,11 +202,11 @@ body {
 }
 
 .dark-mode .country-detail p strong {
-  color: #e2e8f0; /* Vaaleampi väri dark modessa */
+  color: #e2e8f0; 
 }
 
 .dark-mode .country-detail p {
-  color: #a0aec0; /* Vielä haaleampi väri dark modessa */
+  color: #a0aec0; 
 }
 
 .dark-mode .border-button {
