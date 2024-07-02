@@ -12,7 +12,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 ### Links
 
 - Solution URL: [https://github.com/nj93777/rest-countries-api-with-color-theme-switcher-master]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://nj93777.github.io/rest-countries-api-with-color-theme-switcher-master/]
 
 ### Built with
 
