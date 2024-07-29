@@ -1,7 +1,7 @@
 body {
   background: #f7fafc;
   color: #1a202c;
-  font-family: Arial, sans-serif;
+  font-family: "Nunito Sans", Arial, sans-serif;
 }
 
 .header {
@@ -122,12 +122,13 @@ body {
 }
 
 .country-detail {
+
   padding: 20px;
   border-radius: 5px;
 }
 
 .country-detail img {
-  width: 30%;
+  width:500px;
   height: auto;
   margin-bottom: 20px;
   flex-shrink: 0;
